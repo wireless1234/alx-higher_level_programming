@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-for num in range(0,100):
+for num in range(0, 100):
     if num != 99:
-        print(f'{num//10}{num%10},', end=" ")
+        print(f"{num//10}{num%10},", end=" ")
     else:
-        print(f'{num//10}{num%10}')
+        print(f"{num//10}{num%10}")
