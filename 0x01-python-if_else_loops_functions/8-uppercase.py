@@ -6,5 +6,5 @@ def uppercase(str):
             uppercase = chr(ascii_num - 32)
         else:
             uppercase = char
-        print(uppercase, end='')
+        print("{}".format(uppercase), end='')
     print()
