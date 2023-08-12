@@ -13,4 +13,4 @@ if __name__ == "__main__":
     a = int(sys.argv[1])
     b = int(sys.argv[3])
     result = operator[sys.argv[2]](a, b)
-    print("{a} {sys.argv[2]} {b} = {result}".format(a, sys.argv[2], b, result))
+    print("{} {} {} = {}".format(a, sys.argv[2], b, result))
