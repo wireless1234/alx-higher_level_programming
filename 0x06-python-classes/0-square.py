@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 class Square:
     """
-    create a square
+    create a Square
     """
     pass
