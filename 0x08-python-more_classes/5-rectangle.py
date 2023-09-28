@@ -56,6 +56,9 @@ class Rectangle:
 
     def __repr__(self):
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+
     @staticmethod
     def __del__():
+        """Delete instance message
+        """
         print("Bye rectangle...")
