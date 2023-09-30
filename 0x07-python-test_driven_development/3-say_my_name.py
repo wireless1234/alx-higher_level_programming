@@ -2,6 +2,7 @@
 """
     Module contains the say_my_name function
     Function says your name
+    Prototype: def say_my_name(first_name, last_name="")
 """
 
 
@@ -20,7 +21,10 @@ def say_my_name(first_name, last_name=""):
         raise TypeError("first_name must be a string")
     if not isinstance(last_name, str):
         raise TypeError("last_name must be a string")
-    message = f"My name is {first_name} {last_name}" \
-        if last_name else f"My name is {first_name}"
+    
+    if last_name:
+        message = f"My name is {first_name} {last_name}"
+    else:
+        message = f"My name is {first_name}"
 
     print(message)
