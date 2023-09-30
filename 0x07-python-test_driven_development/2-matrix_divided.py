@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 """
+    Module contains the matrix divided function
+    Prototype: def matrix_divided(matrix, div)
+    Function divides elements of matrix by div
 """
 
 
