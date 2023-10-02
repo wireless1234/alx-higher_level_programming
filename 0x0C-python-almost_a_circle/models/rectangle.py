@@ -3,6 +3,7 @@
 """
 from models.base import Base
 
+
 class Rectangle(Base):
     """ Class Rectangle inherits Base
         Defines a rectangle
@@ -60,12 +61,16 @@ class Rectangle(Base):
         self.__y = y
 
     def check_integer(self, name, att):
+        """Checks if att is an integer
+        """
         if not isinstance(att, int):
             raise TypeError("{} must be an integer".format(name))
         elif att <= 0:
             raise ValueError("{} must be > 0".format(name))
 
     def check_integer2(self, name, att):
+        """checks if att is an integer
+        """
         if not isinstance(att, int):
             raise TypeError("{} must be an integer".format(name))
         elif att < 0:
@@ -76,6 +81,8 @@ class Rectangle(Base):
         return self.__width * self.__height
 
     def display(self):
+        """ displays rectangle object
+        """
         for i in range(self.__y):
             print()
         for j in range(self.__height):
@@ -86,6 +93,8 @@ class Rectangle(Base):
                 self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
+        """ update values of rectangle
+        """
         if args:
             if len(args) >= 1:
                 self.id = args[0]
