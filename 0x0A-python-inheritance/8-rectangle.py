@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ Module defines rectangle class
+rectangle class inherits base geometry
 """
 
 
