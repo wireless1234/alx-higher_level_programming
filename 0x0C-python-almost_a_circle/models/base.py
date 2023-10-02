@@ -7,6 +7,7 @@ class Base:
     """Create a base parent class
     """
     __nb_objects = 0
+
     def __init__(self, id=None):
         """
         Initialize attribues of base class
